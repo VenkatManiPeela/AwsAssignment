@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::833321125418:role/ecsTaskExecutionRole",
+  "executionRoleArn": null,
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -51,21 +51,14 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::833321125418:role/ecsTaskExecutionRole",
+  "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:833321125418:task-definition/demo-deploy:3",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:833321125418:task-definition/demo-deploy:4",
   "family": "demo-deploy",
-  "requiresAttributes": [
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
-    }
-  ],
+  "requiresAttributes": [],
   "pidMode": null,
   "requiresCompatibilities": [
     "EC2"
@@ -73,7 +66,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": "256",
-  "revision": 3,
+  "revision": 4,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
