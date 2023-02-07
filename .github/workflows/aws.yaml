@@ -26,6 +26,20 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
 
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowAssumeRoleWithWebIdentity",
+            "Effect": "Allow",
+            "Action": [
+                "sts:AssumeRoleWithWebIdentity"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
     steps:
     - name: Checkout
       uses: actions/checkout@v3
