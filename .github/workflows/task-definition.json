@@ -68,7 +68,7 @@
   ],
   "pidMode": null,
   "requiresCompatibilities": [
-    "EC2"
+    "EC2","ECS","ECS"
   ],
   "networkMode": null,
   "runtimePlatform": null,
