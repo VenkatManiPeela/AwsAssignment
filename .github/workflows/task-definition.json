@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": null,
+  "executionRoleArn": "arn:aws:iam::833321125418:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -29,7 +29,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "833321125418.dkr.ecr.ap-south-1.amazonaws.com/demo-deploy",
+      "image": "public.ecr.aws/x1a1q3b6/demo-deploy",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -51,29 +51,29 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": null,
+  "taskRoleArn": "arn:aws:iam::833321125418:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:833321125418:task-definition/demo-deploy:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:833321125418:task-definition/demo-deploy:3",
   "family": "demo-deploy",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
     }
   ],
   "pidMode": null,
   "requiresCompatibilities": [
-    "EC2","ECS","ECS"
+    "EC2"
   ],
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": "256",
-  "revision": 1,
+  "revision": 3,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
