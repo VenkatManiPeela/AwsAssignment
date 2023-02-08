@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:833321125418:task-definition/demo-deploy:7",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:833321125418:task-definition/demo-deploy",
   "family": "demo-deploy",
   "requiresAttributes": [
     {
