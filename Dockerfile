@@ -4,7 +4,8 @@ RUN apt-get update && \
     apt-get install -y apache2 && \
     apt-get install -y git
 
-RUN git clone https://github.com/frikishaan/bootsapp.git /var/www/html/
+git clone https://github.com/frikishaan/bootsapp.git
+COPY ./bootsapp /var/www/html
 
 EXPOSE 80
  
