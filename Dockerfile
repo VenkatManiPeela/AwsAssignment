@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
-RUN sudo apt-get update && \
-    sudo apt-get install -y apache2 && \
-    sudo apt-get install apt-utils
-    sudo apt-get install -y git
+RUN apt-get update && \
+    apt-get install -y apache2 && \
+    apt-get install apt-utils
+    apt-get install -y git
  
 COPY git clone https://github.com/frikishaan/bootsapp.git /var/www/html
 
